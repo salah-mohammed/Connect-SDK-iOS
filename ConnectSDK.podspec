@@ -96,10 +96,10 @@ Pod::Spec.new do |s|
     sp.dependency 'ConnectSDK/no-arc'
     sp.ios.vendored_frameworks = 'core/Frameworks/LGCast/LGCast.framework', 'core/Frameworks/LGCast/GStreamerForLGCast.framework'
     
-    sp.preserve_path = 'core/Frameworks/LGCast/*.framework'
-    sp.xcconfig = {
-        "HEADER_SEARCH_PATHS" => '"$(PODS_ROOT)/ConnectSDK/core/Frameworks/LGCast/LGCast.framework/Headers" "$(PODS_ROOT)/ConnectSDK/core/Frameworks/LGCast/GStreamerForLGCast.framework/Headers"',
-    }
+    # sp.preserve_path = 'core/Frameworks/LGCast/*.framework'
+    # sp.xcconfig = {
+    #     "HEADER_SEARCH_PATHS" => '"$(PODS_ROOT)/ConnectSDK/core/Frameworks/LGCast/LGCast.framework/Headers" "$(PODS_ROOT)/ConnectSDK/core/Frameworks/LGCast/GStreamerForLGCast.framework/Headers"',
+    # }
   end
 
   s.subspec 'no-arc' do |sp|
