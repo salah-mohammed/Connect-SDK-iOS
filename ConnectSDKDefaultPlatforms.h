@@ -20,8 +20,17 @@
 
 #ifndef kConnectSDKDefaultPlatforms
 
+//#define kConnectSDKDefaultPlatforms (@{ \
+//    @"AirPlayService"     : @"ZeroConfDiscoveryProvider", \
+//    @"DIALService"        : @"SSDPDiscoveryProvider", \
+//    @"DLNAService"        : @"SSDPDiscoveryProvider", \
+//    @"NetcastTVService"   : @"SSDPDiscoveryProvider", \
+//    @"RokuService"        : @"SSDPDiscoveryProvider", \
+//    @"WebOSTVService"     : @"SSDPDiscoveryProvider", \
+//    @"CastService"        : @"CastDiscoveryProvider", \
+//    @"FireTVService"      : @"FireTVDiscoveryProvider", \
+//})
 #define kConnectSDKDefaultPlatforms (@{ \
-    @"AirPlayService"     : @"ZeroConfDiscoveryProvider", \
     @"DIALService"        : @"SSDPDiscoveryProvider", \
     @"DLNAService"        : @"SSDPDiscoveryProvider", \
     @"NetcastTVService"   : @"SSDPDiscoveryProvider", \
@@ -30,5 +39,4 @@
     @"CastService"        : @"CastDiscoveryProvider", \
     @"FireTVService"      : @"FireTVDiscoveryProvider", \
 })
-
 #endif
